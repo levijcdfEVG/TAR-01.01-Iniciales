@@ -1,15 +1,12 @@
 <?php 
-    function factorialNumero($enterMin, $enterMax){
-        $arrayFactorial = array();
-        
-        for($numero = $enterMin; $numero <= $enterMax; $numero++) {
-            $factorial = 1;  
-            for($i = $numero; $i > 1; $i--) {
-                $factorial *= $i;
-            }
-            $arrayFactorial[$numero] = $factorial;
-        }
+    $arrayPruebas = array(); // Inicializar el array vacío
 
-        return $arrayFactorial;
+    // Recorremos del 0 al 10 para calcular los factoriales
+    for ($i = 0; $i <= 10; $i++) { 
+        $factorial = 1; // Inicializamos el factorial en 1 para cada número
+        for ($j = 1; $j <= $i; $j++) { 
+            $factorial *= $j; // Calculamos el factorial
+        }
+        $arrayPruebas[$i] = $factorial; // Guardamos el factorial en la posición correspondiente
     }
 ?>

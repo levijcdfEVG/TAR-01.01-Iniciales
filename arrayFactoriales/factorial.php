@@ -25,10 +25,9 @@
                     <td>FACTORIAL</td>
                 </tr>
                     <?php
-                        $factorials = factorialNumero($enterMin, $enterMax);
-                        for ($i = $enterMin; $i <= $enterMax; $i++) {
-                            $factorial = $factorials[$i];
-                            echo "<tr><td>$i</td><td>$factorial</td></tr>";
+                         // Imprimir el array para comprobar los resultados
+                        for ($i=0; $i < 9; $i++) { 
+                            echo "$arrayPruebas[$i] <br>";
                         }
                     ?>
                 <tr>
