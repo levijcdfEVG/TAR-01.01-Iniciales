@@ -14,7 +14,6 @@
             <table>
                 <tr>
                     <?php
-                        // Esto es una prueba de git
                       require 'algoritmo.php';
                       $enterMin = $_GET['enterMin'];
                       $enterMax = $_GET['enterMax'];
