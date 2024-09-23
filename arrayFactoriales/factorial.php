@@ -15,9 +15,7 @@
                 <tr>
                     <?php
                       require 'algoritmo.php';
-                      $enterMin = $_GET['enterMin'];
-                      $enterMax = $_GET['enterMax'];
-                      echo '<th colspan="2" id="tableTitle">TABLA DE FACTORIALES DEL ' . $enterMin . ' AL ' . $enterMax . '</th>';
+                      echo '<th colspan="2" id="tableTitle">TABLA DE FACTORIALES DEL 0 AL 10</th>';
                     ?>  
                 </tr>
                 <tr>
