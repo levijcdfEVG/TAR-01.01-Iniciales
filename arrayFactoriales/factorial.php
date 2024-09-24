@@ -18,8 +18,10 @@
             $numMax = $_GET['enterMax'];
             $arrayPruebas = calcularFactorial($numMin,$numMax);
             // echo $$arrayPruebas
-             // Imprimir el array para comprobar los resultados
-            for($i=0; $i < count($arrayPruebas); $i++) { 
+            //Imprimir el array para comprobar los resultados
+            //print_r($arrayPruebas);
+            //echo count($arrayPruebas);
+            for($i = 0; $i <= count($arrayPruebas)-1; $i++) { 
                echo "<tr><td>$i</td><td>$arrayPruebas[$i]</td></tr>";
             }
             // print_r($arrayPruebas); Esto sirve para ver todos los valores del array y no se suele utilzar en las aplicaciones que se van a utilizar por los usuarios
