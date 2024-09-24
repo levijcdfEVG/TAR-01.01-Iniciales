@@ -1,0 +1,8 @@
+Intentar darle valor a las celdas del array manualmente en vez de utilizar un for
+Ejemplo:
+    $colores = array(
+    0=>"azul",
+    1=>"naranja",
+    2=>"verde");
+
+    $colores = array (“azul”, “naranja”, “verde”);
