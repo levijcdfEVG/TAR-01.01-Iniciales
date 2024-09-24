@@ -10,13 +10,15 @@
     </head>
     <body>
         <h1>Tabla de Factoriales del 0 al 10</h1>
+        <table>
         <?php
             require 'algoritmo.php';
              // Imprimir el array para comprobar los resultados
             for ($i=0; $i < 9; $i++) { 
-                echo "$arrayPruebas[$i] <br>";
+                echo "<tr><td>$i</td><td>$arrayPruebas[$i]</td></tr>";
             }
         ?>
+        </table>    
         </div>
     </body>
 </html>
