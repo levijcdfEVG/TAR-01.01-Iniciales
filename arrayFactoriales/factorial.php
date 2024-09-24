@@ -13,6 +13,11 @@
         <table>
         <?php
             require 'algoritmo.php';
+            $numMin = $_GET['numMin'];
+            $numMax = $_GET['numMax'];
+
+
+            calcularFactorial($numMin,$numMax)
             // echo $$arrayPruebas
              // Imprimir el array para comprobar los resultados
             for ($i=0; $i < 9; $i++) { 
