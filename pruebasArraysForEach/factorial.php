@@ -12,11 +12,15 @@
         <h1>Tabla de Factoriales</h1>
         <table>
         <?php
-            require 'algoritmo2.php';
-            for($i = 0; $i <= count($arrayPruebas)-1; $i++) { 
-               echo "<tr><td>$i</td><td>$arrayPruebas[$i]</td></tr>";
+            require 'funciones.php';
+            
+            for ($i=0; $i < 10; $i++) { 
+                $array[$i] = calcularFactorial($i);
             }
-            // print_r($arrayPruebas); Esto sirve para ver todos los valores del array y no se suele utilzar en las aplicaciones que se van a utilizar por los usuarios
+
+            foreach ($array as $i => $valor) {
+                echo $i." ".$valor."<br/>";
+            }
         ?>
         </table>    
         </div>
