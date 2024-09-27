@@ -1,15 +1,19 @@
 <!--  Levi Josué Candeias de Figueiredo  -->
-  <?php 
-		function factorialNumero($n){
-			for($numero = $n; $numero <= 10; $numero++) {
-                $factorial = 1;  
-                for($i = $numero; $i > 1; $i--) {
-                    $factorial *= $i;
-                }
-				echo "<tr><td>$numero</td><td>$factorial</td></tr>";
+<?php 
+	// Función que calcula y muestra los factoriales del número $n al 10
+	function factorialNumero($n){
+		// Itera desde $n hasta 10
+		for($numero = $n; $numero <= 10; $numero++) {
+            $factorial = 1;  
+            // Calcula el factorial del número actual
+            for($i = $numero; $i > 1; $i--) {
+                $factorial *= $i;
             }
-		}
-    ?>
+			// Muestra el número y su factorial en una fila de la tabla
+			echo "<tr><td>$numero</td><td>$factorial</td></tr>";
+        }
+	}
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -32,6 +36,7 @@
                 </tr>
 				<?php 
 					$n = 1;
+					// Llama a la función para generar la tabla de factoriales
 					factorialNumero($n);
 				?>
                 <tr>

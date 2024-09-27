@@ -1,8 +1,8 @@
 <!--  Levi Josué Candeias de Figueiredo  -->
 <?php
-$n = 1;
-$maximo = 100; 
-include 'factorial.php' 
+$n = 1; // Inicializa el número inicial para el cálculo de factoriales
+$maximo = 100; // Define el número máximo para el cálculo
+include 'factorial.php'; // Incluye el archivo que contiene la función para calcular factoriales
 ?>
 <!DOCTYPE html>
 <html>
@@ -19,13 +19,14 @@ include 'factorial.php'
             <table>
                 <tr>
                      <th colspan="2" id="tableTitle">
-                        <?php echo "TABLA DE FACTORIALES DEL $n AL $maximo"; ?>
+                        <?php echo "TABLA DE FACTORIALES DEL $n AL $maximo"; // Muestra el título de la tabla ?>
                     </th>
                 </tr>
                <?php	
-				    echo "<tr><td>$n</td><td>$maximo</td></tr>";
+				    // Muestra la cabecera inicial de la tabla
+					echo "<tr><td>$n</td><td>$maximo</td></tr>";
 					
-					factorialNumero($n,$maximo);
+					factorialNumero($n, $maximo); // Llama a la función para calcular y mostrar los factoriales
 				?>
                 <tr>
                     <td colspan="2">Levi Josué Candeias de Figueiredo</td>

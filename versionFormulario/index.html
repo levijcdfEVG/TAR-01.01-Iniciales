@@ -10,12 +10,12 @@
 </head>
 <body>
     <h1>Introducir Números</h1>
-    <div id="formContainer">
-        <form action="factorial.php" method="GET">
-            <fieldset>
-                <input type="text" name="enterMin" id="enterMin" placeholder="Introduce el mínimo" required>
-                <input type="text" name="enterMax" id="enterMax" placeholder="Introduce el máximo" required>
-                <input type="submit" name="submitButton" id="submitButton" value="Submit">
+    <div id="formContainer"> <!-- Contenedor para el formulario -->
+        <form action="factorial.php" method="GET"> <!-- Formulario que envía datos a 'factorial.php' usando el método GET -->
+            <fieldset> <!-- Agrupa los elementos del formulario para una mejor presentación -->
+                <input type="text" name="enterMin" id="enterMin" placeholder="Introduce el mínimo" required> <!-- Campo de entrada para el número mínimo, requerido -->
+                <input type="text" name="enterMax" id="enterMax" placeholder="Introduce el máximo" required> <!-- Campo de entrada para el número máximo, requerido -->
+                <input type="submit" name="submitButton" id="submitButton" value="Submit"> <!-- Botón de envío del formulario -->
             </fieldset>
         </form>
     </div>

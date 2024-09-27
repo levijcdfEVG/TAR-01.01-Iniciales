@@ -20,13 +20,15 @@
                     <td>FACTORIAL</td>
                 </tr>
                 <?php 
-                    
+                    // Itera del 1 al 10 para calcular los factoriales
                     for($numero = 1; $numero <= 10; $numero++) {
                         $factorial = 1;  
+                        // Calcula el factorial del número actual
                         for($i = $numero; $i > 1; $i--) {
                             $factorial *= $i;
                         }
-						echo "<tr><td>$numero</td><td>$factorial</td></tr>";
+                        // Muestra el número y su factorial
+                        echo "<tr><td>$numero</td><td>$factorial</td></tr>";
                     }
                ?>
                 <tr>

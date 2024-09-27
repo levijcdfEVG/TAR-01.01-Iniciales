@@ -12,14 +12,16 @@
         <h1>Tabla de Factoriales</h1>
         <table>
         <?php
-            require 'funciones.php';
+            require 'funciones.php'; // Incluye el archivo que contiene la función calcularFactorial
             
-            for ($i=0; $i < 10; $i++) { 
-                $array[$i] = calcularFactorial($i);
+            // Calcula el factorial de los números del 0 al 9 y los almacena en un array
+            for ($i = 0; $i < 10; $i++) { 
+                $array[$i] = calcularFactorial($i); // Almacena el resultado del factorial en el array
             }
 
+            // Recorre el array y muestra el índice y el valor del factorial
             foreach ($array as $i => $valor) {
-                echo $i." ".$valor."<br/>";
+                echo $i . " " . $valor . "<br/>"; // Muestra el número y su factorial
             }
         ?>
         </table>    
